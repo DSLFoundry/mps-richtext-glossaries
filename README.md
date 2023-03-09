@@ -16,3 +16,5 @@ An example glossary in action can be seen here:
 Note that since this uses the more generic *mps-richtext* plugin, this can also be used in conjunction with mbeddr's requirements and documentation languages. For example:
 
 ![An example requirement using glossary terms](images/example_requirement.png "An example requirement using glossary terms")
+
+The current version works on MPS 2018.2 with a corresponding mbeddr.

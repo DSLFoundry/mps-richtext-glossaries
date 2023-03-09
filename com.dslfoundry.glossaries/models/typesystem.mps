@@ -250,7 +250,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="5CFBq1VZFQj" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                            <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                           </node>
                         </node>
                       </node>
@@ -395,7 +395,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="5CFBq1VZW9P" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                                      <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                                     </node>
                                   </node>
                                 </node>
@@ -406,7 +406,7 @@
                                     <ref role="3cqZAo" node="5CFBq1VZW9J" resolve="key" />
                                   </node>
                                   <node concept="liA8E" id="5CFBq1VZZ97" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                     <node concept="2OqwBi" id="5CFBq1W00je" role="37wK5m">
                                       <node concept="2GrUjf" id="5CFBq1VZZLJ" role="2Oq$k0">
                                         <ref role="2Gs0qQ" node="5CFBq1VYy7C" resolve="entry" />
@@ -459,7 +459,7 @@
                           </node>
                           <node concept="2YIFZM" id="5CFBq1VYQZu" role="2MkJ7o">
                             <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                             <node concept="Xl_RD" id="5CFBq1VYRrK" role="37wK5m">
                               <property role="Xl_RC" value="Duplicate glossary term '%s'" />
                             </node>
@@ -551,7 +551,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="5CFBq1W0xUe" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.compareTo(java.lang.String):int" resolve="compareTo" />
+                          <ref role="37wK5l" to="wyt6:~String.compareTo(java.lang.String)" resolve="compareTo" />
                           <node concept="37vLTw" id="5CFBq1W0yBl" role="37wK5m">
                             <ref role="3cqZAo" node="5CFBq1W0k_c" resolve="lastTerm" />
                           </node>
@@ -567,7 +567,7 @@
                         </node>
                         <node concept="2YIFZM" id="5CFBq1W0P6r" role="a7wSD">
                           <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                          <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                          <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                           <node concept="Xl_RD" id="5CFBq1W0DDh" role="37wK5m">
                             <property role="Xl_RC" value="Glossary '%s' is not ordered" />
                           </node>
@@ -651,7 +651,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="6r1UujIVDU9" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
               </node>
             </node>
             <node concept="17RlXB" id="6r1UujIVEXV" role="2OqNvi" />

@@ -2,7 +2,7 @@
 <model ref="r:2d8d771c-ea7d-418b-a899-acd4bf11c040(com.dslfoundry.glossaries.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
@@ -109,13 +109,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -454,9 +454,6 @@
                     <node concept="1bVj0M" id="5CFBq1VYL6F" role="23t8la">
                       <node concept="3clFbS" id="5CFBq1VYL6G" role="1bW5cS">
                         <node concept="2MkqsV" id="5CFBq1VYL9H" role="3cqZAp">
-                          <node concept="37vLTw" id="5CFBq1VYLxK" role="2OEOjV">
-                            <ref role="3cqZAo" node="5CFBq1VYL6H" resolve="it" />
-                          </node>
                           <node concept="2YIFZM" id="5CFBq1VYQZu" role="2MkJ7o">
                             <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                             <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
@@ -471,6 +468,9 @@
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                               </node>
                             </node>
+                          </node>
+                          <node concept="37vLTw" id="5CFBq1VYLxK" role="1urrMF">
+                            <ref role="3cqZAo" node="5CFBq1VYL6H" resolve="it" />
                           </node>
                         </node>
                       </node>
@@ -562,9 +562,6 @@
                   <node concept="3clFbJ" id="5CFBq1W0uC6" role="3cqZAp">
                     <node concept="3clFbS" id="5CFBq1W0uC8" role="3clFbx">
                       <node concept="a7r0C" id="5CFBq1W0DDf" role="3cqZAp">
-                        <node concept="1YBJjd" id="5CFBq1W0DDi" role="2OEOjV">
-                          <ref role="1YBMHb" node="5CFBq1W0kqG" resolve="glossary" />
-                        </node>
                         <node concept="2YIFZM" id="5CFBq1W0P6r" role="a7wSD">
                           <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                           <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
@@ -579,6 +576,9 @@
                               <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                             </node>
                           </node>
+                        </node>
+                        <node concept="1YBJjd" id="5CFBq1W0DDi" role="1urrMF">
+                          <ref role="1YBMHb" node="5CFBq1W0kqG" resolve="glossary" />
                         </node>
                       </node>
                     </node>
@@ -678,7 +678,7 @@
             <node concept="Xl_RD" id="6r1UujIVF3x" role="2MkJ7o">
               <property role="Xl_RC" value="No description for glossary term" />
             </node>
-            <node concept="1YBJjd" id="6r1UujIVF48" role="2OEOjV">
+            <node concept="1YBJjd" id="6r1UujIVF48" role="1urrMF">
               <ref role="1YBMHb" node="6r1UujIVBIc" resolve="termRef" />
             </node>
           </node>

@@ -17,4 +17,4 @@ Note that since this uses the more generic *mps-richtext* plugin, this can also 
 
 ![An example requirement using glossary terms](images/example_requirement.png "An example requirement using glossary terms")
 
-The current version works on MPS 2019.2 with a corresponding mbeddr.
+The current version works on MPS 2019.3 with a corresponding mbeddr.

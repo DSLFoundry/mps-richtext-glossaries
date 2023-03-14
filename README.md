@@ -18,3 +18,7 @@ Note that since this uses the more generic *mps-richtext* plugin, this can also 
 ![An example requirement using glossary terms](images/example_requirement.png "An example requirement using glossary terms")
 
 The current version works on MPS 2021.1 with a corresponding mbeddr.
+
+# building
+This project uses the com.specificlanguages.mps build plugin.
+Run gradlew setup to download all dependencies and gradlew build to execute the build.

@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/com.dslfoundry.glossaries/com.dslfoundry.glossaries.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Examples/Examples.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps-richtext-glossaries.build/mps-richtext-glossaries.build.msd" folder="" />
     </projectModules>
   </component>
 </project>

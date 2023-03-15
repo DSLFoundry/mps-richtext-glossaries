@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="mps-richtext-glossaries.build" uuid="77c29666-f8b1-473e-905b-b66ed62d4e67" moduleVersion="0" compileInMPS="true">
+<solution name="mps-richtext-glossaries.build" uuid="ae52cd5e-2e1c-48b4-a555-befed00b913b" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -27,7 +27,7 @@
     <module reference="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" version="0" />
     <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
-    <module reference="77c29666-f8b1-473e-905b-b66ed62d4e67(mps-richtext-glossaries.build)" version="0" />
+    <module reference="ae52cd5e-2e1c-48b4-a555-befed00b913b(mps-richtext-glossaries.build)" version="0" />
   </dependencyVersions>
 </solution>
 

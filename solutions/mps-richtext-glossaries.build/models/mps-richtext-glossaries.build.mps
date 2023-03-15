@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2b7e8417-4e2f-4150-930d-77e33f1ab807(mps-richtext-glossaries.build)">
+<model ref="r:09c81d74-01b4-4edd-8e80-8a6136fbd30b(mps-richtext-glossaries.build)">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -7,9 +7,8 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="p6ld" ref="r:0764bd79-eef9-46f0-a6fe-739a07a30bb2(com.mbeddr.build.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
@@ -76,17 +75,12 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
-      <concept id="7832771629084799699" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginVendor" flags="ng" index="2iUeEo">
-        <property id="7832771629084799702" name="name" index="2iUeEt" />
-        <property id="7832771629084799701" name="url" index="2iUeEu" />
-      </concept>
       <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
         <reference id="6592112598314586626" name="group" index="m$f5T" />
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="1359186315025500371" name="xml" index="20twgj" />
-        <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
@@ -96,9 +90,6 @@
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
         <child id="3570488090019868128" name="packagingType" index="pUk7w" />
-      </concept>
-      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
-        <reference id="6592112598314499037" name="target" index="m$_yA" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
@@ -135,158 +126,128 @@
       </concept>
     </language>
   </registry>
-  <node concept="1l3spW" id="1Ne_JjXAnsH">
+  <node concept="1l3spW" id="76RcO2KNt4o">
     <property role="TrG5h" value="mps-richtext-glossaries" />
     <property role="2DA0ip" value="../.." />
-    <node concept="10PD9b" id="1Ne_JjXAnsI" role="10PD9s" />
-    <node concept="3b7kt6" id="1Ne_JjXAnsJ" role="10PD9s" />
-    <node concept="398rNT" id="1Ne_JjXAnsK" role="1l3spd">
+    <node concept="10PD9b" id="76RcO2KNt4p" role="10PD9s" />
+    <node concept="3b7kt6" id="76RcO2KNt4q" role="10PD9s" />
+    <node concept="398rNT" id="76RcO2KNt4r" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
     </node>
-    <node concept="2sgV4H" id="1Ne_JjXAnsL" role="1l3spa">
+    <node concept="2sgV4H" id="76RcO2KNt4s" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
-      <node concept="398BVA" id="1Ne_JjXAnsM" role="2JcizS">
-        <ref role="398BVh" node="1Ne_JjXAnsK" resolve="mps_home" />
+      <node concept="398BVA" id="76RcO2KNt4t" role="2JcizS">
+        <ref role="398BVh" node="76RcO2KNt4r" resolve="mps_home" />
       </node>
     </node>
-    <node concept="2sgV4H" id="1Ne_JjXAnAf" role="1l3spa">
-      <ref role="1l3spb" to="p6ld:4i9pOwKTFVe" resolve="mbeddr" />
-      <node concept="55IIr" id="1Ne_JjXAnAk" role="2JcizS">
-        <node concept="2Ry0Ak" id="1Ne_JjXAnAn" role="iGT6I">
-          <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="1Ne_JjXAnAs" role="2Ry0An">
-            <property role="2Ry0Am" value="dependencies" />
-            <node concept="2Ry0Ak" id="1Ne_JjXAnAx" role="2Ry0An">
-              <property role="2Ry0Am" value="mbeddr" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2sgV4H" id="1Ne_JjXAnAG" role="1l3spa">
+    <node concept="2sgV4H" id="76RcO2KNt51" role="1l3spa">
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
-      <node concept="55IIr" id="1Ne_JjXAnAQ" role="2JcizS">
-        <node concept="2Ry0Ak" id="1Ne_JjXAnAT" role="iGT6I">
+      <node concept="55IIr" id="76RcO2KNt56" role="2JcizS">
+        <node concept="2Ry0Ak" id="76RcO2KNt5b" role="iGT6I">
           <property role="2Ry0Am" value="build" />
-          <node concept="2Ry0Ak" id="1Ne_JjXAnAY" role="2Ry0An">
+          <node concept="2Ry0Ak" id="76RcO2KNt5g" role="2Ry0An">
             <property role="2Ry0Am" value="dependencies" />
-            <node concept="2Ry0Ak" id="1Ne_JjXAnB3" role="2Ry0An">
+            <node concept="2Ry0Ak" id="76RcO2KNt5l" role="2Ry0An">
               <property role="2Ry0Am" value="com.mbeddr.platform" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="1l3spV" id="1Ne_JjXAnt6" role="1l3spN">
-      <node concept="3981dG" id="1Ne_JjXAnt7" role="39821P">
-        <node concept="3_J27D" id="1Ne_JjXAnt8" role="Nbhlr">
-          <node concept="3Mxwew" id="1Ne_JjXAnt9" role="3MwsjC">
-            <property role="3MwjfP" value="com.dslfoundry.glossaries.zip" />
+    <node concept="1l3spV" id="76RcO2KNt4L" role="1l3spN">
+      <node concept="3981dG" id="76RcO2KNt4M" role="39821P">
+        <node concept="3_J27D" id="76RcO2KNt4N" role="Nbhlr">
+          <node concept="3Mxwew" id="76RcO2KNt4O" role="3MwsjC">
+            <property role="3MwjfP" value="mps-richtext-glossaries.zip" />
           </node>
         </node>
-        <node concept="m$_wl" id="1Ne_JjXAnta" role="39821P">
-          <ref role="m_rDy" node="1Ne_JjXAnsT" resolve="com.dslfoundry.glossaries" />
-          <node concept="pUk6x" id="1Ne_JjXAntb" role="pUk7w" />
+        <node concept="m$_wl" id="76RcO2KNt4P" role="39821P">
+          <ref role="m_rDy" node="76RcO2KNt4$" resolve="glossaries" />
+          <node concept="pUk6x" id="76RcO2KNt4Q" role="pUk7w" />
         </node>
       </node>
     </node>
-    <node concept="m$_wf" id="1Ne_JjXAnsT" role="3989C9">
-      <property role="m$_wk" value="com.dslfoundry.glossaries" />
-      <node concept="3_J27D" id="1Ne_JjXAnsU" role="m$_yQ">
-        <node concept="3Mxwew" id="1Ne_JjXAnsV" role="3MwsjC">
-          <property role="3MwjfP" value="com.dslfoundry.glossaries" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="1Ne_JjXAnsW" role="m$_w8">
-        <node concept="3Mxwew" id="1Ne_JjXAnsX" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
-        </node>
-      </node>
-      <node concept="m$f5U" id="1Ne_JjXAnsY" role="m$_yh">
-        <ref role="m$f5T" node="1Ne_JjXAnsS" resolve="mps-richtext-glossaries" />
-      </node>
-      <node concept="m$_yB" id="1Ne_JjXAnBf" role="m$_yh">
-        <ref role="m$_yA" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
-      </node>
-      <node concept="m$_yB" id="1Ne_JjXAnBq" role="m$_yh">
-        <ref role="m$_yA" to="90a9:6Y0V2RJk2ll" resolve="de.itemis.mps.selection.runtime" />
-      </node>
-      <node concept="m$_yB" id="1Ne_JjXAnB$" role="m$_yh">
-        <ref role="m$_yA" to="90a9:6SVXTgIejl1" resolve="de.itemis.mps.editor.celllayout.runtime" />
-      </node>
-      <node concept="m$_yB" id="1Ne_JjXAnBK" role="m$_yh">
-        <ref role="m$_yA" to="90a9:4p3FRivDLPL" resolve="de.slisson.mps.editor.multiline.runtime" />
-      </node>
-      <node concept="m$f5U" id="1Ne_JjXAnBY" role="m$_yh">
-        <ref role="m$f5T" to="90a9:2Xjt3l57hhs" resolve="de.slisson.mps.hacks" />
-      </node>
-      <node concept="m$_yB" id="1Ne_JjXAnCe" role="m$_yh">
-        <ref role="m$_yA" to="90a9:6SVXTgIel8z" resolve="de.itemis.mps.editor.celllayout.styles" />
-      </node>
-      <node concept="m$_yC" id="1Ne_JjXAnsZ" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
-      </node>
-      <node concept="3_J27D" id="1Ne_JjXAnt0" role="m_cZH">
-        <node concept="3Mxwew" id="1Ne_JjXAnt1" role="3MwsjC">
+    <node concept="m$_wf" id="76RcO2KNt4$" role="3989C9">
+      <property role="m$_wk" value="glossaries" />
+      <node concept="3_J27D" id="76RcO2KNt4_" role="m$_yQ">
+        <node concept="3Mxwew" id="76RcO2KNt4A" role="3MwsjC">
           <property role="3MwjfP" value="mps-richtext-glossaries" />
         </node>
       </node>
-      <node concept="2pNNFK" id="1Ne_JjXAnt2" role="20twgj">
+      <node concept="3_J27D" id="76RcO2KNt4B" role="m$_w8">
+        <node concept="3Mxwew" id="76RcO2KNt4C" role="3MwsjC">
+          <property role="3MwjfP" value="1.0" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="76RcO2KNt4D" role="m$_yh">
+        <ref role="m$f5T" node="76RcO2KNt4z" resolve="mps-richtext-glossaries" />
+      </node>
+      <node concept="m$_yC" id="76RcO2KNt4E" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
+      </node>
+      <node concept="m$_yC" id="76RcO2KNt5E" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.itemis.mps.extensions.build" />
+      </node>
+      <node concept="m$_yC" id="76RcO2KNt5H" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
+      </node>
+      <node concept="3_J27D" id="76RcO2KNt4F" role="m_cZH">
+        <node concept="3Mxwew" id="76RcO2KNt4G" role="3MwsjC">
+          <property role="3MwjfP" value="mps-richtext-glossaries" />
+        </node>
+      </node>
+      <node concept="2pNNFK" id="76RcO2KNt4H" role="20twgj">
         <property role="2pNNFO" value="depends" />
-        <node concept="3o6iSG" id="1Ne_JjXAnt3" role="3o6s8t">
+        <node concept="3o6iSG" id="76RcO2KNt4I" role="3o6s8t">
           <property role="3o6i5n" value="com.intellij.modules.platform" />
         </node>
       </node>
-      <node concept="2iUeEo" id="1Ne_JjXAzxH" role="2iVFfd">
-        <property role="2iUeEt" value="DSLFoundry" />
-        <property role="2iUeEu" value="https://dslfoundry.com/" />
-      </node>
     </node>
-    <node concept="2G$12M" id="1Ne_JjXAnsS" role="3989C9">
+    <node concept="2G$12M" id="76RcO2KNt4z" role="3989C9">
       <property role="TrG5h" value="mps-richtext-glossaries" />
-      <node concept="1E1JtD" id="1Ne_JjXAnsR" role="2G$12L">
+      <node concept="1E1JtD" id="76RcO2KNt4y" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.dslfoundry.glossaries" />
         <property role="3LESm3" value="2d1da20f-1f66-40b6-a74e-45f7a997b1bd" />
-        <node concept="55IIr" id="1Ne_JjXAnsN" role="3LF7KH">
-          <node concept="2Ry0Ak" id="1Ne_JjXAnsO" role="iGT6I">
+        <node concept="55IIr" id="76RcO2KNt4u" role="3LF7KH">
+          <node concept="2Ry0Ak" id="76RcO2KNt4v" role="iGT6I">
             <property role="2Ry0Am" value="com.dslfoundry.glossaries" />
-            <node concept="2Ry0Ak" id="1Ne_JjXAnsP" role="2Ry0An">
+            <node concept="2Ry0Ak" id="76RcO2KNt4w" role="2Ry0An">
               <property role="2Ry0Am" value="com.dslfoundry.glossaries.mpl" />
             </node>
           </node>
         </node>
-        <node concept="1BupzO" id="1Ne_JjXAntf" role="3bR31x">
+        <node concept="1BupzO" id="76RcO2KNt4U" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="1Ne_JjXAntg" role="1HemKq">
-            <node concept="55IIr" id="1Ne_JjXAntc" role="3LXTmr">
-              <node concept="2Ry0Ak" id="1Ne_JjXAntd" role="iGT6I">
+          <node concept="3LXTmp" id="76RcO2KNt4V" role="1HemKq">
+            <node concept="55IIr" id="76RcO2KNt4R" role="3LXTmr">
+              <node concept="2Ry0Ak" id="76RcO2KNt4S" role="iGT6I">
                 <property role="2Ry0Am" value="com.dslfoundry.glossaries" />
-                <node concept="2Ry0Ak" id="1Ne_JjXAnte" role="2Ry0An">
+                <node concept="2Ry0Ak" id="76RcO2KNt4T" role="2Ry0An">
                   <property role="2Ry0Am" value="models" />
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="1Ne_JjXAnth" role="3LXTna">
+            <node concept="3qWCbU" id="76RcO2KNt4W" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1Ne_JjXAnB8" role="3bR37C">
-          <node concept="1Busua" id="1Ne_JjXAnB9" role="1SiIV1">
+        <node concept="1SiIV0" id="76RcO2KNt5q" role="3bR37C">
+          <node concept="1Busua" id="76RcO2KNt5r" role="1SiIV1">
             <ref role="1Busuk" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
           </node>
         </node>
-        <node concept="3rtmxn" id="1Ne_JjXAoRF" role="3bR31x">
-          <node concept="3LXTmp" id="1Ne_JjXAoRG" role="3rtmxm">
-            <node concept="55IIr" id="1Ne_JjXAoRH" role="3LXTmr">
-              <node concept="2Ry0Ak" id="1Ne_JjXAoRI" role="iGT6I">
+        <node concept="3rtmxn" id="76RcO2KNt5L" role="3bR31x">
+          <node concept="3LXTmp" id="76RcO2KNt5M" role="3rtmxm">
+            <node concept="55IIr" id="76RcO2KNt5N" role="3LXTmr">
+              <node concept="2Ry0Ak" id="76RcO2KNt5O" role="iGT6I">
                 <property role="2Ry0Am" value="com.dslfoundry.glossaries" />
               </node>
             </node>
-            <node concept="3qWCbU" id="1Ne_JjXAoRK" role="3LXTna">
+            <node concept="3qWCbU" id="76RcO2KNt5Q" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
           </node>

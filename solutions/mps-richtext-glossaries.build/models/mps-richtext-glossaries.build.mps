@@ -22,8 +22,14 @@
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
+      <concept id="2755237150521975431" name="jetbrains.mps.build.structure.BuildVariableMacroInitWithString" flags="ng" index="aVJcg">
+        <child id="2755237150521975437" name="value" index="aVJcq" />
+      </concept>
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
         <child id="7321017245477039051" name="compositePart" index="iGT6I" />
+      </concept>
+      <concept id="3767587139141066978" name="jetbrains.mps.build.structure.BuildVariableMacro" flags="ng" index="2kB4xC">
+        <child id="2755237150521975432" name="initialValue" index="aVJcv" />
       </concept>
       <concept id="4993211115183325728" name="jetbrains.mps.build.structure.BuildProjectDependency" flags="ng" index="2sgV4H">
         <reference id="5617550519002745380" name="script" index="1l3spb" />
@@ -68,6 +74,9 @@
       <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
         <property id="4903714810883755350" name="text" index="3MwjfP" />
       </concept>
+      <concept id="4903714810883702017" name="jetbrains.mps.build.structure.BuildVarRefStringPart" flags="ng" index="3Mxwey">
+        <reference id="4903714810883702018" name="macro" index="3Mxwex" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -75,12 +84,17 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
+      <concept id="7832771629084799699" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginVendor" flags="ng" index="2iUeEo">
+        <property id="7832771629084799702" name="name" index="2iUeEt" />
+        <property id="7832771629084799701" name="url" index="2iUeEu" />
+      </concept>
       <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
         <reference id="6592112598314586626" name="group" index="m$f5T" />
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="1359186315025500371" name="xml" index="20twgj" />
+        <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
@@ -134,6 +148,16 @@
     <node concept="398rNT" id="76RcO2KNt4r" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
     </node>
+    <node concept="2kB4xC" id="76RcO2KNzx1" role="1l3spd">
+      <property role="TrG5h" value="version" />
+      <node concept="aVJcg" id="76RcO2KNzx9" role="aVJcv">
+        <node concept="NbPM2" id="76RcO2KNzx8" role="aVJcq">
+          <node concept="3Mxwew" id="76RcO2KNzx7" role="3MwsjC">
+            <property role="3MwjfP" value="2021.1.1" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2sgV4H" id="76RcO2KNt4s" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="76RcO2KNt4t" role="2JcizS">
@@ -158,7 +182,13 @@
       <node concept="3981dG" id="76RcO2KNt4M" role="39821P">
         <node concept="3_J27D" id="76RcO2KNt4N" role="Nbhlr">
           <node concept="3Mxwew" id="76RcO2KNt4O" role="3MwsjC">
-            <property role="3MwjfP" value="mps-richtext-glossaries.zip" />
+            <property role="3MwjfP" value="com.dslfoundry.glossaries-" />
+          </node>
+          <node concept="3Mxwey" id="76RcO2KNzxg" role="3MwsjC">
+            <ref role="3Mxwex" node="76RcO2KNzx1" resolve="version" />
+          </node>
+          <node concept="3Mxwew" id="76RcO2KNzxf" role="3MwsjC">
+            <property role="3MwjfP" value=".zip" />
           </node>
         </node>
         <node concept="m$_wl" id="76RcO2KNt4P" role="39821P">
@@ -171,12 +201,12 @@
       <property role="m$_wk" value="glossaries" />
       <node concept="3_J27D" id="76RcO2KNt4_" role="m$_yQ">
         <node concept="3Mxwew" id="76RcO2KNt4A" role="3MwsjC">
-          <property role="3MwjfP" value="mps-richtext-glossaries" />
+          <property role="3MwjfP" value="com.dslfoundry.glossaries" />
         </node>
       </node>
       <node concept="3_J27D" id="76RcO2KNt4B" role="m$_w8">
-        <node concept="3Mxwew" id="76RcO2KNt4C" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+        <node concept="3Mxwey" id="76RcO2KNzxd" role="3MwsjC">
+          <ref role="3Mxwex" node="76RcO2KNzx1" resolve="version" />
         </node>
       </node>
       <node concept="m$f5U" id="76RcO2KNt4D" role="m$_yh">
@@ -193,7 +223,7 @@
       </node>
       <node concept="3_J27D" id="76RcO2KNt4F" role="m_cZH">
         <node concept="3Mxwew" id="76RcO2KNt4G" role="3MwsjC">
-          <property role="3MwjfP" value="mps-richtext-glossaries" />
+          <property role="3MwjfP" value="com.dslfoundry.glossaries" />
         </node>
       </node>
       <node concept="2pNNFK" id="76RcO2KNt4H" role="20twgj">
@@ -201,6 +231,10 @@
         <node concept="3o6iSG" id="76RcO2KNt4I" role="3o6s8t">
           <property role="3o6i5n" value="com.intellij.modules.platform" />
         </node>
+      </node>
+      <node concept="2iUeEo" id="76RcO2KNzwU" role="2iVFfd">
+        <property role="2iUeEt" value="DSLFoundry" />
+        <property role="2iUeEu" value="https://dslfoundry.eu/" />
       </node>
     </node>
     <node concept="2G$12M" id="76RcO2KNt4z" role="3989C9">

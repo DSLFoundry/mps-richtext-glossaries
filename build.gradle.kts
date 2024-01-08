@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    mps("com.jetbrains:mps:2021.1.+")
-    generation("com.mbeddr:platform:2021.1.+")
-    generation("com.mbeddr:mbeddr:2021.1.+")
+    mps("com.jetbrains:mps:2021.2.+")
+    generation("com.mbeddr:platform:2021.2.+")
+    generation("com.mbeddr:mbeddr:2021.2.+")
 }
